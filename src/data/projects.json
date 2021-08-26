@@ -1,0 +1,31 @@
+{
+	"projects": [
+		{
+			"id": 1,
+			"projectName": "Landing Page",
+			"creationDate": "09/09/09",
+			"description": "description",
+			"assignedTo": "Ignacio Truffa",
+			"projectManager": "Walt Cosani",
+			"status": "enabled"
+		},
+		{
+			"id": 2,
+			"projectName": "E-Commerce Shop",
+			"creationDate": "09/09/09",
+			"description": "description",
+			"assignedTo": "Ignacio Truffa",
+			"projectManager": "Walt Cosani",
+			"status": "enabled"
+		},
+		{
+			"id": 3,
+			"projectName": "CRM Linkroom",
+			"creationDate": "09/09/09",
+			"description": "description",
+			"assignedTo": "Ignacio Truffa",
+			"projectManager": "Walt Cosani",
+			"status": "enabled"
+		}
+	]
+}
