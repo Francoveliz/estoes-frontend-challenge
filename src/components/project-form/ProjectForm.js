@@ -1,12 +1,8 @@
 import React from "react";
 import {
 	FormControl,
-	Button,
 	FormLabel,
 	Input,
-	Stack,
-	Image,
-	Box,
 	VStack,
 	Select,
 } from "@chakra-ui/react";
