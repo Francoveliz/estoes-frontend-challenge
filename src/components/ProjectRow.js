@@ -2,6 +2,7 @@ import { Avatar, HStack, Td, Text, Tr, VStack } from "@chakra-ui/react";
 import React from "react";
 import OptionsMenu from "./project-card/OptionsMenu";
 import profile from "../assets/images/profile.jpg";
+import profile2 from "../assets/images/profile2.jpg";
 
 const ProjectRow = ({
 	creationDate,
@@ -27,13 +28,13 @@ const ProjectRow = ({
 			</Td>
 			<Td>
 				<HStack alignItems="center">
-					<Avatar size="sm" name="ignacio truffa" src={profile} mr={1} />
+					<Avatar size="sm" name="profile image" src={profile2} mr={1} />
 					<Text> {projectManager}</Text>
 				</HStack>
 			</Td>
 			<Td>
 				<HStack alignItems="center">
-					<Avatar size="sm" name="ignacio truffa" src={profile} mr={1} />
+					<Avatar size="sm" name="profile image" src={profile} mr={1} />
 					<Text>{assignedTo}</Text>
 				</HStack>
 			</Td>

@@ -16,7 +16,7 @@ import {
 import { BsThreeDotsVertical } from "react-icons/bs";
 import { RiEditBoxLine } from "react-icons/ri";
 import { AiOutlineDelete } from "react-icons/ai";
-import { useSelector, useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 import { deleteProject } from "../../redux/slices/projectsSlice";
 import { Link } from "react-router-dom";
 
