@@ -44,35 +44,49 @@ const ProjectForm = ({
 		return null;
 	};
 
+	const successEditToast = () =>
+		toast({
+			title: "The project has been successfully edited",
+			status: "success",
+			duration: 9000,
+			isClosable: true,
+		});
+
+	const successAddToast = () =>
+		toast({
+			title: "The project has been successfully created",
+			status: "success",
+			duration: 9000,
+			isClosable: true,
+		});
+
+	const handleAddProject = values => {
+		dispatch(
+			addProject({
+				id: uuidv4(),
+				...values,
+				creationDate: Date.now(),
+			})
+		);
+	};
+
+	const handleEditProject = values => {
+		dispatch(
+			editProject({
+				id,
+				creationDate,
+				...values,
+			})
+		);
+	};
+
 	const handleSubmit = values => {
 		if (id) {
-			dispatch(
-				editProject({
-					id,
-					creationDate,
-					...values,
-				})
-			);
-			toast({
-				title: "The project has been successfully edited",
-				status: "success",
-				duration: 9000,
-				isClosable: true,
-			});
+			handleEditProject(values);
+			successEditToast();
 		} else {
-			dispatch(
-				addProject({
-					id: uuidv4(),
-					...values,
-					creationDate: Date.now(),
-				})
-			);
-			toast({
-				title: "The project has been successfully created",
-				status: "success",
-				duration: 9000,
-				isClosable: true,
-			});
+			handleAddProject(values);
+			successAddToast();
 		}
 		history.push("/");
 	};
