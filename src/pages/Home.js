@@ -6,6 +6,7 @@ import HeaderContainer from "../components/header/HeaderContainer";
 import HeaderText from "../components/header/HeaderText";
 import PrimaryButton from "../components/PrimaryButton";
 import ProjectsList from "../components/ProjectsList";
+import SearchBar from "../components/SearchBar";
 
 const Home = () => {
 	return (
@@ -18,7 +19,9 @@ const Home = () => {
 					</PrimaryButton>
 				</Link>
 			</HeaderContainer>
+
 			<Box bgColor="gray.100" minH="100vh" py={{ base: 4, md: 8 }}>
+				<SearchBar />
 				<ProjectsList />
 			</Box>
 		</Box>
